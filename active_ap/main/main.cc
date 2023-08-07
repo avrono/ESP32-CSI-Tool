@@ -20,6 +20,9 @@
 #include "../../_components/input_component.h"
 #include "../../_components/sockets_component.h"
 
+
+// https://github.com/avrono/ESP32-CSI-Tool/pull/new/fix_marco
+
 /*
  * The examples use WiFi configuration that you can set via 'idf.py menuconfig'.
  *
