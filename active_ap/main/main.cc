@@ -21,7 +21,10 @@
 #include "../../_components/sockets_component.h"
 
 
-// https://github.com/avrono/ESP32-CSI-Tool/pull/new/fix_marco
+#ifndef MAC2STR
+#define MAC2STR(a) (a)[0], (a)[1], (a)[2], (a)[3], (a)[4], (a)[5]
+#define MACSTR "%02x:%02x:%02x:%02x:%02x:%02x"
+#endif
 
 /*
  * The examples use WiFi configuration that you can set via 'idf.py menuconfig'.
